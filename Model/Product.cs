@@ -6,6 +6,6 @@ namespace ProjectExample2.Model
         public int Id { get; set; }
         public string ProductName { get; set; } = null!;
         public decimal Price { get; set;}
-        public Orderdetial? Orderdetials;
+        public ICollection<Orderdetial>?  Orderdetials;
     }
 }
